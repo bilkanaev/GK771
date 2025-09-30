@@ -1,9 +1,12 @@
 package rest.model;
 
+import jakarta.xml.bind.annotation.*;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
+@XmlRootElement(name = "WarehouseData")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class WarehouseData {
 	
 	private String warehouseID;
@@ -13,6 +16,9 @@ public class WarehouseData {
 	private String warehouseCity;
 	private String warehouseCountry;
 	private String timestamp;
+
+	@XmlElementWrapper(name = "productData")
+	@XmlElement(name = "product")
 	private List<ProductData> productData;
 
 	/**

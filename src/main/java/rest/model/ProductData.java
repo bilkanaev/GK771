@@ -1,5 +1,7 @@
 package rest.model;
 
+import jakarta.xml.bind.annotation.*;
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ProductData {
     private String productID;
     private String productName;

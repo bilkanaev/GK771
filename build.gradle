@@ -15,8 +15,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'jakarta.xml.bind:jakarta.xml.bind-api:3.0.1'
+	runtimeOnly 'org.glassfish.jaxb:jaxb-runtime:3.0.1'
 }
-
 test {
 	useJUnitPlatform()
 }
